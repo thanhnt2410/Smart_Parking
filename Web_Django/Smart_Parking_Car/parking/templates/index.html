@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="slider_cont_section">
+                    <h4>My Parking</h4>
+                    <h4>Spot</h4>
+                    <div class="button_section mb-3">
+                        <a href="#" class="btn btn-primary">Reserve</a>
+                    </div>
+                    <div class="button_section">
+                        <a href="#" class="btn btn-secondary">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="col-lg-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-table mr-1"></i> Parking Zones
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Parking Zone</th>
+                                            <th>Location</th>
+                                            <th>Vacant Slots</th>
+                                            <th>Price</th>
+                                            <th>Slots</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Zone 1</td>
+                                            <td>Location 1</td>
+                                            <td> </td> <!-- Để trống Vacant Slots Status -->
+                                            <td>10.00</td> <!-- Giá -->
+                                            <td>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Slot</th>
+                                                            <th>Status</th>
+                                                            <th>Warning</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Bảng 6 slot thủ công -->
+                                                        <tr>
+                                                            <td>Slot 1</td>
+                                                            <td>Vacant</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slot 2</td>
+                                                            <td>Occupied</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slot 3</td>
+                                                            <td>Vacant</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slot 4</td>
+                                                            <td>Occupied</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slot 5</td>
+                                                            <td>Vacant</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slot 6</td>
+                                                            <td>Occupied</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- Bạn có thể thêm các khu vực đỗ xe khác ở đây nếu cần -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
