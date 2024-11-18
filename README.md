@@ -7,5 +7,6 @@ Hệ thống bãi đỗ xe thông minh có các chức năng:
 - Web quản lý bãi đỗ xe bằng Django
 
 <h2>Web Django</h2>
+   
 ![image](https://github.com/user-attachments/assets/319c1e07-6876-42b1-b633-1d8f9937544b)
 
